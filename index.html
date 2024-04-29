@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM + Olá Mundo</title>
+</head>
+
+<body>
+    <div class="mensagemOlaMundo">
+        <h1>Olá Seja Bem Vindo!</h1>
+        <button type="submit" onclick="exibirMensagem()">Clique Aqui</button>
+        <h2 id="mensagem"></h2>
+    </div>
+    <div class="Calculadora">
+        <fieldset>
+            <legend>Calculadora</legend>
+            <label for="numero1">Digite o primeiro número:</label>
+            <input type="number" id="num1" name="num1"><br><br>
+            <label for="numero2">Digite o segundo número:</label>
+            <input type="number" id="num2" name="num2"><br><br>
+            <button type="button" onclick="calcular()">Calcular</button>
+            <p id="exibirResultado" style="font-weight: 600;"></p>
+        </fieldset>
+    </div>
+    <div class="elemento">
+        <p id="meuElementoId">Elemento ID</p>
+        <button type="button" onclick="alterarPropriedadeId()">Alterar Propriedade</button>
+    </div>
+    <div class="mudarElementoName">
+        <input type="text" name="meuInput" value="Texto 1">
+        <input type="text" name="meuInput" value="Texto 2">
+        <input type="text" name="meuInput" value="Texto 3">
+        <button class="btn-name" onclick="alterarPropriedade()">Alterar Propriedade</button>
+    </div>
+    <div>
+        <p class="minhaClasse">Este é um parágrafo com a classe "minhaClasse".</p>
+        <button class="btn-class" onclick="alterarPropriedadeClasse()">Alterar Propriedade</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
